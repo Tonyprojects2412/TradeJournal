@@ -4,6 +4,6 @@ export default {
   schema: './src/db/schema.ts',
   dialect: 'sqlite',
   dbCredentials: {
-    url: 'file:C:/Users/admin/Desktop/tradejournal.db',
+    url: process.env.DATABASE_URL || 'file:tradejournal.db',
   },
 };
